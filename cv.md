@@ -27,5 +27,19 @@
 >}
 >```
 
+## Experience
+> Aug. 2014 - May 2021
+>
+> Teacher
+>
+> Worked as a teacher at school. He taught mathematics and computer science.
+
+## Education
+> Chernivtsi National University. Y. Fedkovich at the Faculty of Applied Mathematics
+
+## English level
+> A2 (Pre-Intermediate) 
+
+
 
 
