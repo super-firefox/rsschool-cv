@@ -1,114 +1,94 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,800);
 
-:root{
-    --color-basic: black;
-    --color-secondary: white;
-    --color-prime: #EB2717;
+:root {
+  --color-basic: black;
+  --color-secondary: white;
+  --color-prime: #eb2717;
 }
 
-html {
-    font-size: 14px;
-}
-
-body{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-    font-family: 'Montserrat';
-    width: 70vmax;
-    margin: 3vh 0;
+  font-family: "Montserrat";
+  width: 70vmax;
+  margin: 3vh 0;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-around;
-}
-
-.column__item_right{
-    align-self: flex-end;
-}
-
-.row {
-    display: flex;
-    flex: 1;
-}
-
-
-/* HEADER */
+/*? HEADER */
 
 .header {
-    display: flex;
-    background-color:#626262;
-    color: var(--color-secondary);
-    background: no-repeat center/100% url(image_458702.jpg);
+  display: flex;
+  background-color: #626262;
+  color: var(--color-secondary);
+  background: no-repeat center/100% url(image_458702.jpg);
 }
 
 /* FIRST COLUMN HEADER */
-.avatar{
-    width: 40%;
-    border-radius: 100%;
-    padding: 1.0em;
+.avatar {
+  display: flex;
+  flex: 1;
+}
+
+.avatar__image {
+  width: 40%;
+  border-radius: 100%;
+  padding: 1em;
 }
 
 /* SECOND COLUMN HEADER */
 
-.header-text{
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 
-} 
+.header-text_title {
+  font-size: 3vw;
+}
 
-.header-text_title,
 .header-text_subtitle {
-    text-transform: uppercase;
+  font-size: 2vw;
+  background-color: var(--color-prime);
+  text-align: center;
+  width: 70%;
+  align-self: flex-end;
 }
 
-.header-text_title{
-    font-size: 3vw;
-    font-weight: 500;
-}
-
-.header-text_subtitle {
-    font-size: 2vw;
-    font-weight: 400;
-    width: 70%;
-    text-align: center;
-    background-color: var(--color-prime);
-}
-
-/* MAIN */
+/*? MAIN */
 
 .main {
-    display: flex;
-    align-self: center;
+  display: flex;
+  align-self: center;
 }
 
 /* SIDE BAR */
 
 .side-bar {
-    width: 40%;
-    /* flex: 1 1 40%; */
-    background-color: var(--color-basic);
-    color: var(--color-secondary);
+  width: 40%;
+  background-color: var(--color-basic);
+  color: var(--color-secondary);
 }
 
 .timeline {
-    width: 60%;
-    /* flex: 2 1 60%; */
+  width: 60%;
+  /* flex: 2 1 60%; */
 }
 
-/* FOOTER */
+/*? FOOTER */
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--color-prime);
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-prime);
 }
 
 .logo {
-    width: 80px;
+  width: 80px;
 }
-
-
