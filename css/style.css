@@ -23,24 +23,21 @@ body {
   display: flex;
   background-color: #626262;
   color: var(--color-secondary);
-  background: no-repeat center/100% url(image_458702.jpg);
+  background: no-repeat center/100% url(../img/image_458702.jpg);
 }
 
-/* FIRST COLUMN HEADER */
-.avatar {
+.header__avatar {
   display: flex;
   flex: 1;
 }
 
-.avatar__image {
+.header__image {
   width: 40%;
   border-radius: 100%;
   padding: 1em;
 }
 
-/* SECOND COLUMN HEADER */
-
-.header-text {
+.header__text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -49,11 +46,11 @@ body {
   font-weight: 500;
 }
 
-.header-text_title {
+.header__text_title {
   font-size: 3vw;
 }
 
-.header-text_subtitle {
+.header__text_subtitle {
   font-size: 2vw;
   background-color: var(--color-prime);
   text-align: center;
