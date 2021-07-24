@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ihor Tymchuk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__avatar">
+                <img src="img/image.jpg" alt="photo" class="header__image">
+            </div>
+
+            <div class="header__text">
+                <h1 class="header__text_title">ihor tymchuk</h1>
+                <h2 class="header__text_subtitle">web developer</h2>
+            </div>
+        </header>
+        <main class="main">
+            <div class="wrapper__side-bar">
+                <div class="side-bar">
+                    <h2 class="side-bar__title side-bar__title_prime">Profile</h2>
+                    <p class="side-bar__paragraph">
+                        I’m a web developer but I don’t have experience yet. He studied at Chernivtsi National
+                        University.
+                        Y. Fedkovich at the Faculty of Applied Mathematics, majoring in mathematics. After graduating in
+                        2014. went to work at school as a teacher of mathematics and computer science. It helped me gain
+                        experience in teamwork, responsibility and the ability to teach others. He has studied
+                        JavaScript,
+                        html, Css and React in his spare time. Since I really like programming, I want to continue to
+                        improve my skills and develop as a programmer.
+                    </p>
+                </div>
+                <div class="side-bar">
+                    <h2 class="side-bar__title">Skills</h2>
+                    <span class="side-bar__line"></span>
+                    <ul class="side-bar__list">
+                        <li class="side-bar__item"><span>JavaScript (ES6+)</span></li>
+                        <li class="side-bar__item"><span>CSS (less, sass)</span></li>
+                        <li class="side-bar__item"><span>HTML5</span></li>
+                    </ul>
+                </div>
+                <div class="side-bar">
+                    <h2 class="side-bar__title">English level</h2>
+                    <span class="side-bar__line"></span>
+                    <p class="side-bar__paragraph">A2 (Pre-Intermediate)</p>
+                </div>
+                <div class="side-bar">
+                    <h2 class="side-bar__title side-bar__title_prime">Contacts</h2>
+                    <ul class="side-bar__list">
+                        <li class="side-bar__item"><span>Ivano-Frankivsk, Ukraine</span></li>
+                        <li class="side-bar__item"><span>tel: +380987520466</span></li>
+                        <li class="side-bar__item"><span><a class="link link_green"
+                                    href=" https://github.com/super-firefox" target="_blank" rel="noopener noreferrer">
+                                    github.com/super-firefox</a></span></li>
+                        <li class="side-bar__item"><span>discord: Ihor#2697</span></li>
+                        <li class="side-bar__item"><span>igortym777@ukr.net</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrapper__timeline">
+                <section class="time-line">
+                    <h2 class="time-line__title">Education</h2>
+                    <div>
+                        <h3 class="time-line__event">Chernivtsi National University. Y. Fedkovich</h3>
+                        <p class="time-line__date">The Faculty of Applied Mathematics,<br>
+                            2009-2014</p>
+                    </div>
+                </section>
+                <section class="time-line">
+                    <h2 class="time-line__title">Experience</h2>
+                    <div>
+                        <h3 class="time-line__event">Teacher of mathematics and computer science</h3>
+                        <p class="time-line__date">Aug. 2014 - May 2021</p>
+                    </div>
+                </section>
+                <section class="time-line">
+                    <h2 class="time-line__title">Example Code</h2>
+                    <div class="code">
+                        <pre>
+                            <span class="code__comment">If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+                                The solution returns the sum of all the multiples of 3 or 5 below the number passed in.
+                            </span>  
+                            <span class="code_violet">function</span> <span class="code_green">solution</span>(<span class="code_orange">number</span>) {
+                                &nbsp;<span class="code_violet">let</span> sum <span class="code_orangered">=</span> <span class="code_orange">0</span>;
+                                &nbsp;&nbsp;<span class="code_violet">for</span> (<span class="code_violet">let</span> i <span class="code_orangered">=</span> <span class="code_orange">2</span>; i &lt; number; i<span class="code_orangered">++</span>) {
+                                    &nbsp;&nbsp;&nbsp;<span class="code_violet">if</span> (i <span class="code_orangered">%</span> <span class="code_orange">3</span> <span class="code_orangered">==</span> <span class="code_orange">0</span> <span class="code_orangered">||</span> i <span class="code_orangered">%</span> <span class="code_orange">5</span> <span class="code_orangered">==</span> <span class="code_orange">0</span>) {
+                                        &nbsp;&nbsp;&nbsp;&nbsp;sum <span class="code_orangered">+=</span> i;
+                                        &nbsp;&nbsp;&nbsp;}
+                                        &nbsp;&nbsp;}
+                                        &nbsp;<span class="code_violet">return</span> sum;
+                            }
+                        </pre>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+
+            <div class="footer__logo">
+                <a href="https://rs.school/js/">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="Rs.school">
+                </a>
+            </div>
+
+            <p class="footer__copiright">©2021</p>
+            <p><a class="link link_black" href="https://github.com/super-firefox">github.com/super-firefox</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
