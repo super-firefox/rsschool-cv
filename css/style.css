@@ -77,10 +77,6 @@ body {
 }
 
 /* SIDE BAR */
-.side-bar{
-  
-}
-
 .side-bar__title {
   padding-left: 1em;
   text-transform: uppercase;
@@ -150,7 +146,6 @@ body {
   vertical-align: middle;
   margin-left: 10px;
   background-color: var(--color-prime);
-  
 }
 
 .time-line__event {
@@ -167,10 +162,33 @@ body {
 
 /*! CODE  */
 
+.code_violet{
+  color: violet;
+}
+
+.code_orange{
+  color: orange;
+}
+
+.code_orangered{
+  color:orangered
+}
+
+.code_green {
+  color: darkcyan;
+}
+
+.code__comment {
+  color: yellowgreen;
+}
+
 .code {
   background-color: rgb(17, 28, 44);
   color: var(--color-secondary);
   font-weight: 500;
+  font-style: italic;
+  line-height: 2em;
+  padding: 5px;
 }
 
 /*? FOOTER */
@@ -188,8 +206,6 @@ body {
   text-decoration-line: none;
   color: var(--color-secondary);
 }
-
-
 
 .link_green:hover{
   color: chartreuse;

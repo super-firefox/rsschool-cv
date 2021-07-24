@@ -39,27 +39,29 @@
                     </p>
                 </div>
                 <div class="side-bar">
-                    <h2 class = "side-bar__title">Skills</h2>
-                    <span class= "side-bar__line"></span>
-                    <ul class = "side-bar__list">
-                        <li class = "side-bar__item"><span>JavaScript (ES6+)</span></li>
-                        <li class = "side-bar__item"><span>CSS (less, sass)</span></li>
-                        <li class = "side-bar__item"><span>HTML5</span></li>
+                    <h2 class="side-bar__title">Skills</h2>
+                    <span class="side-bar__line"></span>
+                    <ul class="side-bar__list">
+                        <li class="side-bar__item"><span>JavaScript (ES6+)</span></li>
+                        <li class="side-bar__item"><span>CSS (less, sass)</span></li>
+                        <li class="side-bar__item"><span>HTML5</span></li>
                     </ul>
                 </div>
                 <div class="side-bar">
-                    <h2 class = "side-bar__title">English level</h2>
-                    <span class= "side-bar__line"></span>
-                    <p class = "side-bar__paragraph">A2 (Pre-Intermediate)</p>
+                    <h2 class="side-bar__title">English level</h2>
+                    <span class="side-bar__line"></span>
+                    <p class="side-bar__paragraph">A2 (Pre-Intermediate)</p>
                 </div>
                 <div class="side-bar">
-                    <h2 class = "side-bar__title side-bar__title_prime">Contacts</h2>
-                    <ul class = "side-bar__list">
-                        <li class = "side-bar__item"><span>Ivano-Frankivsk, Ukraine</span></li>
-                        <li class = "side-bar__item"><span>tel: +380987520466</span></li>
-                        <li class = "side-bar__item"><span><a class="link link_green" href=" https://github.com/super-firefox" target="_blank" rel="noopener noreferrer"> github.com/super-firefox</a></span></li>
-                        <li class = "side-bar__item"><span>discord: Ihor#2697</span></li>
-                        <li class = "side-bar__item"><span>igortym777@ukr.net</span></li>
+                    <h2 class="side-bar__title side-bar__title_prime">Contacts</h2>
+                    <ul class="side-bar__list">
+                        <li class="side-bar__item"><span>Ivano-Frankivsk, Ukraine</span></li>
+                        <li class="side-bar__item"><span>tel: +380987520466</span></li>
+                        <li class="side-bar__item"><span><a class="link link_green"
+                                    href=" https://github.com/super-firefox" target="_blank" rel="noopener noreferrer">
+                                    github.com/super-firefox</a></span></li>
+                        <li class="side-bar__item"><span>discord: Ihor#2697</span></li>
+                        <li class="side-bar__item"><span>igortym777@ukr.net</span></li>
                     </ul>
                 </div>
             </div>
@@ -67,38 +69,36 @@
                 <section class="time-line">
                     <h2 class="time-line__title">Education</h2>
                     <div>
-                        <h3 class = "time-line__event">Chernivtsi National University. Y. Fedkovich</h3>
-                        <p class = "time-line__date">The Faculty of Applied Mathematics,<br>
+                        <h3 class="time-line__event">Chernivtsi National University. Y. Fedkovich</h3>
+                        <p class="time-line__date">The Faculty of Applied Mathematics,<br>
                             2009-2014</p>
                     </div>
                 </section>
                 <section class="time-line">
                     <h2 class="time-line__title">Experience</h2>
                     <div>
-                        <h3 class = "time-line__event">Teacher of mathematics and computer science</h3>
-                        <p class = "time-line__date">Aug. 2014 - May 2021</p>
+                        <h3 class="time-line__event">Teacher of mathematics and computer science</h3>
+                        <p class="time-line__date">Aug. 2014 - May 2021</p>
                     </div>
                 </section>
                 <section class="time-line">
                     <h2 class="time-line__title">Example Code</h2>
-                    <div class = "code">
+                    <div class="code">
                         <pre>
-                            function solution(number) {
-                                &nbsp;let sum = 0;
-                                &nbsp;&nbsp;for (let i = 2; i < number; i++) {
-                                    &nbsp;&nbsp;&nbsp;if (i % 3 == 0 || i % 5 == 0) {
-                                        &nbsp;&nbsp;&nbsp;&nbsp;sum += i;
+                            <span class="code__comment">If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+                                The solution returns the sum of all the multiples of 3 or 5 below the number passed in.
+                            </span>  
+                            <span class="code_violet">function</span> <span class="code_green">solution</span>(<span class="code_orange">number</span>) {
+                                &nbsp;<span class="code_violet">let</span> sum <span class="code_orangered">=</span> <span class="code_orange">0</span>;
+                                &nbsp;&nbsp;<span class="code_violet">for</span> (<span class="code_violet">let</span> i <span class="code_orangered">=</span> <span class="code_orange">2</span>; i &lt; number; i<span class="code_orangered">++</span>) {
+                                    &nbsp;&nbsp;&nbsp;<span class="code_violet">if</span> (i <span class="code_orangered">%</span> <span class="code_orange">3</span> <span class="code_orangered">==</span> <span class="code_orange">0</span> <span class="code_orangered">||</span> i <span class="code_orangered">%</span> <span class="code_orange">5</span> <span class="code_orangered">==</span> <span class="code_orange">0</span>) {
+                                        &nbsp;&nbsp;&nbsp;&nbsp;sum <span class="code_orangered">+=</span> i;
                                         &nbsp;&nbsp;&nbsp;}
                                         &nbsp;&nbsp;}
-                                        &nbsp;return sum;
+                                        &nbsp;<span class="code_violet">return</span> sum;
                             }
                         </pre>
-                    </p>
-                </section>
-                <section class="time-line">
-                    <h2 class="time-line__title">Video cv</h2>
-                    <div>
-                        <video src=""></video>
                     </div>
                 </section>
             </div>
@@ -112,7 +112,7 @@
             </div>
 
             <p class="footer__copiright">©2021</p>
-            <p ><a class = "link link_black" href="https://github.com/super-firefox">github.com/super-firefox</a></p>
+            <p><a class="link link_black" href="https://github.com/super-firefox">github.com/super-firefox</a></p>
         </footer>
     </div>
 
