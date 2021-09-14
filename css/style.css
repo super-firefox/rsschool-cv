@@ -15,7 +15,7 @@ body {
 /* Wrapper */
 
 .wrapper {
-  width: 70vmax;
+  width: 70vw;
   margin: 10px auto;
   background: var(--color-secondary);
   box-shadow: 1px 1px 5px rgb(117, 112, 112);
