@@ -3,9 +3,12 @@
 :root {
   --color-basic: black;
   --color-secondary: white;
-  --color-prime: #eb2717;
+  --color-prime: #c31432;
+  --bg-color: linear-gradient(to right, #c31432, #240b36);
   background: rgb(236, 236, 233);
 }
+
+
 
 body {
   font-family: "Montserrat";
@@ -22,48 +25,76 @@ body {
 }
 
 .wrapper__side-bar{
-  width: 40%;
+  min-width: 40%;
+  /* flex: 1 40%;
+  flex-basis: 200px; */
   background-color: var(--color-basic);
   color: var(--color-secondary);
-  padding: 10px 0;
+  padding: 2em 0 0px 0;
 }
 
 .wrapper__timeline{
-  width: 60%;
+  min-width: 60%;
+  /* flex-basis: 40; */
+  /* flex-grow: 10; */
   padding: 10px 0;
 }
 
 /*? HEADER */
 
 .header {
+  /* height: 40vh; */
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   background-color: #626262;
   color: var(--color-secondary);
-  background: no-repeat center/100% url(../img/image_458702.jpg);
+  padding: 2em 0 2em 2em;
+  /* background: no-repeat center/100% url(../img/image_458702.jpg); */
+  background: var(--bg-color);
 }
 
 .header__avatar {
-  display: flex;
-  flex: 1;
+  /* display: flex; */
+  /* width: 100px; */
+  /* flex: 1; */
+  /* position: relative; */
+  /* background: rgb(247, 211, 222); */
+  /* width: 20%; */
+  /* height: 90%; */
+}
+
+.header__avatar-wrapper {
+  display: block-inline;
 }
 
 .header__image {
   width: 40%;
-  border-radius: 100%;
-  padding: 1em;
+  height: auto;
+  /* height: 100%; */
+  /* display: block; */
+  /* border-radius: 100%; */
+  /* position: absolute; */
+  /* top: 20px;
+  left: 20px; */
+  border: solid white 15px;
+  /* outline: #240b36 solid 100%; */
+  box-shadow: rgb(29, 26, 26) 15px 15px 20px;
+  /* padding: 1vw; */
 }
 
 .header__text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   flex: 1;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .header__text_title {
-  font-size: 3vw;
+  font-size: 2.3vw;
 }
 
 .header__text_subtitle {
@@ -76,10 +107,13 @@ body {
 
 /*? MAIN */
 
+
+
 .main {
   display: flex;
+  /* flex-direction: row; */
   align-self: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 /* SIDE BAR */
@@ -89,11 +123,10 @@ body {
   line-height: 1em;
   font-weight: 600;
   letter-spacing: 2px;
-  
 }
 
 .side-bar__title_prime {
-  background-color: var(--color-prime);
+  background: var(--bg-color);
   line-height: 4em;
 }
 
@@ -106,7 +139,7 @@ body {
   height: 2px;
   background-color: var(--color-secondary);
   display: inline-block;
-  width: 90%;
+  width: 95%;
   padding-left: 10px;
   margin-left: 1em;
 }
@@ -201,13 +234,17 @@ body {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color-prime);
+  padding: 10px;
+  background: var(--bg-color);
   
 }
 
 .link{
+  flex: 1 100px;
   vertical-align: middle;
   text-decoration-line: none;
   color: var(--color-secondary);
@@ -219,18 +256,65 @@ body {
 
 .link_black{
   font-weight: 700;
+  /* transition: 0.3s; */
+  position: relative;
+}
+
+.link_github{
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url('../img/free-icon-github-logo-25231.svg');
+  background-image: url('../img/github-while.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .link_black:hover{
   color: var(--color-basic);
 }
 
+.link_black:hover > .link_github {
+  background-image: url('../img/free-icon-github-logo-25231.svg');
+}
+
 .footer__copiright {
+  flex-shrink: 1 100px;
   color: var(--color-secondary);
   font-weight: 900;
 }
 
 .footer__logo {
+  flex-shrink: 100px;
   width: 80px;
   margin: 2%;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper{
+    width: 99vw;
+  }
+
+  .main {
+    /* display: flex; */
+    flex-direction: column;
+    /* flex-grow: 1; */
+  }
+
+  /* media footer */
+  .footer {
+    flex-direction: column;
+  }
+
+  .link_black {
+    color: blue;
+    text-decoration-line: underline;
+  }
+
+  .link_black:hover {
+    text-decoration-line: none;
+    color: blue;
+  }
 }
