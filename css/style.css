@@ -53,7 +53,6 @@ body {
 
 .header__avatar-wrapper {
   display: flex;
-  /* max-width: 50% */
 }
 
 .header__image {
@@ -188,7 +187,7 @@ body {
   content: "";
   display: inline-block;
   height: 3px;
-  width: 100%;
+  width: 92%;
   vertical-align: middle;
   margin-left: 10px;
   background-color: var(--color-prime);
@@ -203,7 +202,52 @@ body {
   line-height: 1em;
   font-style: italic;
   line-height: 1.5em;
+}
+
+/** Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projects__link{
+  text-decoration: none;
+}
+
+.projects__figure{
+  overflow: hidden;
+  width: 250px;
+  border: solid rgb(218, 219, 215) 0px;
+}
+
+.projects__figure:hover{
+  border-color: #c31431c5;
   
+}
+
+.projects__figure:hover > .projects__img{
+  transform: scale(1.05, 1);
+}
+
+.projects__figure:hover > .projects__caption{
+  color: chartreuse;
+}
+
+.projects__img {
+  height: 150px;
+  display: block;
+  transition: 0.5s linear;
+}
+
+.projects__caption{
+  line-height: 3em;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-secondary);
+  background-color: rgb(43, 40, 40);
+  transition: 0.5s linear;
 }
 
 /*! CODE  */
@@ -301,7 +345,7 @@ body {
 
 @media screen and (max-width: 720px) {
   .wrapper{
-    width: 100vw;
+    width: 96vw;
     margin: 0;
   }
 
