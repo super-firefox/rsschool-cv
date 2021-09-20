@@ -14,21 +14,42 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__avatar">
-                <div class="header__avatar-wrapper">
-                    <img class="header__image" src="img/image.jpg" alt="photo">
+            <div class="navigation__wrapper">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#contacts">Contacts</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#profile">Profile</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#skills">Skills</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#english">English</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#education">Education</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#experience">Experience</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#projects">Projects</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#example">Exemple code</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger-btn">
+                <div class="burger-btn__line"></div>
+            </div>
+            <div class="header__wrapper">
+                <div class="header__avatar">
+                    <div class="header__avatar-wrapper">
+                        <img class="header__image" src="img/image.jpg" alt="photo">
+                    </div>
+                </div>
+    
+                <div class="header__text">
+                    <h1 class="header__text_title">ihor tymchuk</h1>
+                    <h2 class="header__text_subtitle">Junior Front-end Developer</h2>
                 </div>
             </div>
-
-            <div class="header__text">
-                <h1 class="header__text_title">ihor tymchuk</h1>
-                <h2 class="header__text_subtitle">Junior Front-end Developer</h2>
-            </div>
+            <span id="contacts"></span>
         </header>
         <main class="main">
             <aside class="wrapper__side-bar">
-                <div class="side-bar">
-                    <h2 class="side-bar__title ">Contacts</h2>
+                <section class="side-bar" >
+                    <h2 class="side-bar__title" >Contacts</h2>
                     <span class="side-bar__line"></span>
                     <ul class="side-bar__list">
                         <li class="side-bar__item"><span>Ivano-Frankivsk, Ukraine</span></li>
@@ -38,9 +59,10 @@
                                     github.com/super-firefox</a></span></li>
                         <li class="side-bar__item"><span>discord: Ihor#2697</span></li>
                         <li class="side-bar__item"><span>igortym777@ukr.net</span></li>
+                        <span id="profile"></span>
                     </ul>
-                </div>
-                <div class="side-bar">
+                </section>
+                <section class="side-bar">
                     <h2 class="side-bar__title side-bar__title_prime">Profile</h2>
                     <p class="side-bar__paragraph">
                         I’m a web developer but I don’t have experience yet. He studied at Chernivtsi National
@@ -51,9 +73,10 @@
                         JavaScript,
                         html, Css and React in his spare time. Since I really like programming, I want to continue to
                         improve my skills and develop as a programmer.
+                        <span id="skills"></span>
                     </p>
-                </div>
-                <div class="side-bar">
+                </section>
+                <section class="side-bar">
                     <h2 class="side-bar__title">Skills</h2>
                     <span class="side-bar__line"></span>
                     <ul class="side-bar__list">
@@ -61,49 +84,61 @@
                         <li class="side-bar__item"><span>CSS (less, sass)</span></li>
                         <li class="side-bar__item"><span>HTML 5</span></li>
                         <li class="side-bar__item"><span>Git</span></li>
+                        <span id="english"></span>
                     </ul>
-                </div>
-                <div class="side-bar">
+                </section>
+                <section class="side-bar">
                     <h2 class="side-bar__title side-bar__title_prime">English level</h2>
-                    <p class="side-bar__paragraph">A2 (Pre-Intermediate)</p>
-                </div>
+                    <p class="side-bar__paragraph">
+                        A2 (Pre-Intermediate)
+                    </p>
+                </section>
             </aside>
+            <span id="education" style="padding-top: 20px; height: 20px;"></span>
             <div class="wrapper__timeline">
+                
                 <section class="time-line">
+                    
                     <h2 class="time-line__title">Education</h2>
                     <div>
                         <h3 class="time-line__event">Chernivtsi National University. Y. Fedkovich</h3>
                         <p class="time-line__date">The Faculty of Applied Mathematics,<br>
                             2009-2014</p>
                         <h3 class="time-line__event">The Rolling Scopes School</h3>
-                        <p class="time-line__date">JS/FE Pre-School (<a href="https://app.rs.school/certificate/lh3kcg3b">Certificate</a>),<br>
-                            Jul. 2021 - Sep. 2021</p>
+                        <p class="time-line__date">JS/FE Pre-School (<a href="https://app.rs.school/certificate/lh3kcg3b" target="_blank">Certificate</a>),<br>
+                            Jul. 2021 - Sep. 2021
+                            <span id="experience"></span>
+                        </p>
                     </div>
                 </section>
                 <section class="time-line">
                     <h2 class="time-line__title">Experience</h2>
                     <div>
                         <h3 class="time-line__event">Teacher of mathematics and computer science</h3>
-                        <p class="time-line__date">Aug. 2014 - Sep. 2021</p>
+                        <p class="time-line__date">
+                            Aug. 2014 - Sep. 2021
+                            <span id="projects"></span>
+                        </p>
                     </div>
                 </section>
                 <section class="time-line">
                     <h2 class="time-line__title">Study projects</h2>
                     <article class="projects">
-                        <a class="projects__link" href="https://rolling-scopes-school.github.io/super-firefox-JSFEPRESCHOOL/photofilter/">
+                        <a class="projects__link" href="https://rolling-scopes-school.github.io/super-firefox-JSFEPRESCHOOL/photofilter/" target="_blank">
                             <!-- photofilter -->
                             <figure class="projects__figure">
                                 <img class="projects__img" src="img/screen-photofilter.png" alt="photofilter">
                                 <figcaption class="projects__caption">Photofilter</figcaption>
                             </figure>
                         </a>
-                        <a class="projects__link" href="https://rolling-scopes-school.github.io/super-firefox-JSFEPRESCHOOL/vertical-slider/">
+                        <a class="projects__link" href="https://rolling-scopes-school.github.io/super-firefox-JSFEPRESCHOOL/vertical-slider/" target="_blank">
                             <!-- vertical-slider -->
                             <figure class="projects__figure">
                                 <img class="projects__img" src="img/Screen-slider.png" alt="photofilter">
                                 <figcaption class="projects__caption">Slider</figcaption>
                             </figure>
                         </a>
+                        <span id="example"></span>
                     </article>
                 </section>
                 <section class="time-line">
@@ -147,7 +182,53 @@
     </div>
 
     <script>
-        setInterval(() => console.log(window.innerWidth + 'px') , 1000);
+        const burgerBtn = document.querySelector('.burger-btn');
+        const body = document.querySelector('body');
+        const menu = document.querySelector('.navigation__wrapper')
+        let open = false;
+        burgerBtn.addEventListener('click', () => {
+            if(!open){
+                burgerBtn.classList.add('open-menu');
+                body.classList.add('disable-scroll');
+                menu.classList.add('show-menu');
+                open = true;
+                console.log('open')
+            } else {
+                burgerBtn.classList.remove('open-menu');
+                body.classList.remove('disable-scroll');
+                menu.classList.remove('show-menu');
+                open=false;
+                console.log('close')
+            }
+        })
+
+        menu.addEventListener('click', (event) =>{
+            console.log(event.target)
+            console.log(event.target.classList.contains('navigation__link'))
+            if(event.target.classList.contains('navigation__link') && open){
+                body.classList.remove('disable-scroll');
+                burgerBtn.classList.remove('open-menu');
+                menu.classList.remove('show-menu');
+                open=false;
+            }
+        })
+
+        let isMobileScreen = false;
+        let resizeTimeout;
+        (function() {
+            window.addEventListener('resize', () => {
+                if(!resizeTimeout){
+                    resizeTimeout = setTimeout(function(){
+                        resizeTimeout = null;
+                        if(open && window.innerWidth>768){
+                            body.classList.remove('disable-scroll');
+                            burgerBtn.classList.remove('open-menu');
+                            open=false;
+                        }
+                    }, 250)
+                }
+            }, false)
+        }());
     </script>
 </body>
 
